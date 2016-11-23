@@ -1,4 +1,4 @@
-#How to install
+#How to install 
 
 Copy the downloaded files to your codeigniter root folder.
 Then run layout.bat file. It will install needed file.
@@ -9,12 +9,14 @@ Then go to setup stage.
 Set   $config['enable_hooks'] = TRUE;  in config.php
 
 In hook.php, add new hook as follow.
+'
 $hook['display_override'] = array(
         'class'    => 'layout_class',
         'function' => 'view',
         'filename' => 'layout_class.php',
         'filepath' => 'core',
 );
+'
 
 In autoload.php, 
 Set  $autoload['helper'] = array('layout');
