@@ -21,7 +21,7 @@ class My_Controller extends CI_Controller{
             $this->viewData = $name;
             else
             $this->viewData = array_merge($this->viewData,$name);
-        }elseif($value != null)
+        }else
         {
             $this->viewData[$name] = $value;
         }
